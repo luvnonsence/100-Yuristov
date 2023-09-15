@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.min.css" />
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 		<script src="./js/main.js" defer></script>
 
 		<title>100 Юристов</title>
@@ -17,33 +18,41 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<nav class="header__nav container">
-					<div class="header__nav-info">
-						<a href="#" class="logo"><img src="./images/logo.svg" alt="Лого" /></a>
-						<input type="text" class="header__nav-search" placeholder="Я хочу найти..." />
-						<button class="header__btn-question btn">Задать вопрос</button>
-						<div class="header__tel"><a href="tel:88003029270">8 800 302-92-70</a>Бесплатный звонок юристу 24/7</div>
-					</div>
+				<div class="container">
+					<input id="burger" type="checkbox" />
+					<label for="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<div class="header__container">
+						<div class="header__container-info">
+							<a href="#" class="logo"><img src="./images/logo.svg" alt="Лого" /></a>
+							<input type="text" class="header__container-search" placeholder="Я хочу найти..." />
+							<button class="header__btn-question btn">Задать вопрос</button>
+							<div class="header__tel"><a href="tel:88003029270">8 800 302-92-70</a>Бесплатный звонок юристу 24/7</div>
+						</div>
 
-					<div class="header__nav-contacts">
-						<div class="header__btn-box">
-							<a class="header__btn header__btn-phone btn-outline">Заказать звонок</a>
-							<a class="header__btn header__btn-telegram btn-outline">Telegram</a>
-						</div>
-						<ul class="header__nav-items">
-							<li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
-							<li class="header__nav-item"><a href="#" class="header__nav-link">Вопросы</a></li>
-							<li class="header__nav-item"><a href="#" class="header__nav-link">Наши юристы</a></li>
-							<li class="header__nav-item"><a href="#" class="header__nav-link">Статьи</a></li>
-							<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-						</ul>
-						<div class="header__user">
-							<a href="" class="header__user-login">Вход</a>
-							/
-							<a href="" class="header__user-register">Регистрация</a>
-						</div>
+						<nav class="header__nav-contacts">
+							<div class="header__btn-box">
+								<a class="header__btn header__btn-phone btn-outline">Заказать звонок</a>
+								<a class="header__btn header__btn-telegram btn-outline">Telegram</a>
+							</div>
+							<ul class="header__nav-items">
+								<li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
+								<li class="header__nav-item"><a href="#" class="header__nav-link">Вопросы</a></li>
+								<li class="header__nav-item"><a href="#" class="header__nav-link">Наши юристы</a></li>
+								<li class="header__nav-item"><a href="#" class="header__nav-link">Статьи</a></li>
+								<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+							</ul>
+							<div class="header__user">
+								<a href="" class="header__user-login">Вход</a>
+								/
+								<a href="" class="header__user-register">Регистрация</a>
+							</div>
+						</nav>
 					</div>
-				</nav>
+				</div>
 			</header>
 
 			<main class="main">
