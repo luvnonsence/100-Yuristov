@@ -107,6 +107,10 @@ sup {
   color: inherit;
 }
 
+.body--fixed {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -156,6 +160,7 @@ sup {
   white-space: nowrap;
   -webkit-transition: 280ms ease-in-out;
   transition: 280ms ease-in-out;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #81D2BC;
@@ -167,6 +172,7 @@ sup {
   border-radius: 10px;
   -webkit-transition: 280ms ease-in-out;
   transition: 280ms ease-in-out;
+  cursor: pointer;
 }
 .btn-outline:hover {
   color: #fff;
@@ -401,17 +407,15 @@ sup {
             justify-content: center;
   }
 }
-.header__btn-phone::before {
-  content: "";
-  background: url("../images/icons/phone.svg") no-repeat;
-  width: 24px;
-  height: 24px;
+.header__btn-phone:hover path {
+  fill: #fff;
 }
-.header__btn-telegram::before {
-  content: "";
-  background: url("../images/icons/telegram.svg") no-repeat;
-  width: 24px;
-  height: 24px;
+.header__btn-telegram {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__btn-telegram:hover path {
+  fill: #fff;
 }
 .header__nav-items {
   display: -webkit-box;
@@ -1364,4 +1368,163 @@ sup {
 }
 .directory__cell-item a:hover {
   color: #33836E;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 896px;
+  height: 397px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+.modal__close-btn {
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__window-img {
+  position: absolute;
+  left: -110px;
+  bottom: 0;
+}
+.modal__window-img::before {
+  content: "";
+  position: absolute;
+  height: 551px;
+  width: 551px;
+  background-color: #33836E;
+  border-radius: 50%;
+  z-index: -1;
+  left: -190px;
+  top: -110px;
+}
+.modal__window-inner {
+  max-width: 577px;
+  margin-left: auto;
+}
+.modal__window-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+.modal__window-specialists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.modal__form-tel {
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid #E0DFE3;
+  padding: 8px 16px;
+}
+.modal__form-tel span {
+  color: #ACAAB4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-bottom: 3px;
+}
+.modal__form-tel input {
+  display: block;
+  font-size: 16px;
+  background-color: transparent;
+}
+.modal__form-tel input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-tel input::-moz-placeholder {
+  font-size: 16px;
+}
+.modal__form-tel input:-ms-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-tel input::-ms-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-tel input::placeholder {
+  font-size: 16px;
+}
+.modal__form-name {
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid #E0DFE3;
+  padding: 8px 16px;
+}
+.modal__form-name span {
+  color: #ACAAB4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-bottom: 3px;
+}
+.modal__form-name input {
+  display: block;
+  font-size: 16px;
+  background-color: transparent;
+}
+.modal__form-name input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-name input::-moz-placeholder {
+  font-size: 16px;
+}
+.modal__form-name input:-ms-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-name input::-ms-input-placeholder {
+  font-size: 16px;
+}
+.modal__form-name input::placeholder {
+  font-size: 16px;
+}
+.modal__form-btn {
+  background-color: #140A32;
+  border-radius: 10px;
+  color: #fff;
+  padding: 18px 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal__form-btn:hover {
+  background-color: #3c2385;
+}
+.modal__window-term {
+  color: #ACAAB4;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
 }

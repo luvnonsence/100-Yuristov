@@ -15,7 +15,7 @@
 		<title>100 Юристов</title>
 	</head>
 
-	<body>
+	<body id="body">
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
@@ -29,14 +29,38 @@
 						<div class="header__container-info">
 							<a href="#" class="logo"><img src="./images/logo.svg" alt="Лого" /></a>
 							<input type="text" class="header__container-search" placeholder="Я хочу найти..." />
-							<button class="header__btn-question btn">Задать вопрос</button>
+							<button class="header__btn-question btn btn--open">Задать вопрос</button>
 							<div class="header__tel"><a href="tel:88003029270">8 800 302-92-70</a>Бесплатный звонок юристу 24/7</div>
 						</div>
 
 						<nav class="header__nav-contacts">
 							<div class="header__btn-box">
-								<a class="header__btn header__btn-phone btn-outline">Заказать звонок</a>
-								<a class="header__btn header__btn-telegram btn-outline">Telegram</a>
+								<a class="header__btn header__btn-phone btn-outline"
+									><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M4.06359 1.25L7.81451 1.25C8.12689 1.25 8.40655 1.44361 8.51651 1.73599L9.97195 5.60588C10.0201 5.73398 10.0323 5.87281 10.0072 6.00735L9.27796 9.91931C10.1743 12.0273 11.6549 13.4439 14.1106 14.7146L17.9756 13.9657C18.1128 13.9391 18.2547 13.9514 18.3853 14.0012L22.2671 15.4804C22.5578 15.5912 22.75 15.87 22.75 16.1812L22.75 19.7655C22.75 21.391 21.3178 22.7101 19.6425 22.3456C16.5889 21.6811 10.9317 19.9923 6.96967 16.0303C3.17453 12.2352 1.90298 6.99252 1.47495 4.15869C1.23072 2.54172 2.52752 1.25 4.06359 1.25ZM7.2953 2.75L4.06359 2.75C3.34457 2.75 2.86556 3.32183 2.95813 3.93467C3.3709 6.66748 4.57852 11.5179 8.03033 14.9697C11.6787 18.6181 16.9825 20.2317 19.9615 20.8799C20.6158 21.0222 21.25 20.524 21.25 19.7655L21.25 16.698L18.051 15.479L14.1427 16.2363C13.9801 16.2678 13.8116 16.2446 13.6636 16.1703C10.7693 14.7176 8.89037 12.9954 7.80364 10.2785C7.75085 10.1466 7.73665 10.0023 7.7627 9.86255L8.49431 5.9381L7.2953 2.75Z"
+											fill="#2F2B43"
+										/></svg
+									>Заказать звонок</a
+								>
+								<a class="header__btn header__btn-telegram btn-outline"
+									><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.27053 11.4346C8.23172 9.27314 11.54 7.84814 13.1952 7.15965C17.9214 5.19388 18.9035 4.8524 19.5436 4.84112C19.6843 4.83864 19.9991 4.87353 20.203 5.03898C20.3752 5.17869 20.4226 5.36741 20.4452 5.49986C20.4679 5.63232 20.4961 5.93405 20.4737 6.16982C20.2176 8.86081 19.1094 15.3911 18.5456 18.4051C18.307 19.6804 17.8373 20.108 17.3825 20.1499C16.3943 20.2408 15.6438 19.4968 14.6866 18.8693C13.1888 17.8875 12.3426 17.2762 10.8887 16.3181C9.20843 15.2109 10.2977 14.6023 11.2552 13.6078C11.5058 13.3475 15.8602 9.38681 15.9445 9.02752C15.9551 8.98258 15.9648 8.81508 15.8653 8.72664C15.7658 8.63819 15.619 8.66844 15.513 8.69249C15.3628 8.72659 12.9699 10.3081 8.33455 13.4372C7.65536 13.9035 7.04017 14.1308 6.48898 14.1189C5.88133 14.1057 4.71248 13.7753 3.84355 13.4928C2.77777 13.1464 1.93072 12.9632 2.00448 12.3749C2.0429 12.0684 2.46491 11.755 3.27053 11.4346Z"
+											fill="url(#paint0_linear_12_148)"
+										/>
+										<defs>
+											<linearGradient id="paint0_linear_12_148" x1="11.241" y1="4.841" x2="11.241" y2="20.0439" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#2AABEE" />
+												<stop offset="1" stop-color="#229ED9" />
+											</linearGradient>
+										</defs></svg
+									>Telegram</a
+								>
 							</div>
 							<ul class="header__nav-items">
 								<li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
@@ -67,7 +91,7 @@
 									понятные условия сотрудничества
 								</div>
 								<div class="hero__call">
-									<div class="hero__btn btn">Задать вопрос юристу</div>
+									<div class="hero__btn btn btn--open">Задать вопрос юристу</div>
 									<a class="hero__tel" href="tel:+78003029270">8 800 302-92-70<span></span><span>Бесплатный звонок юристу 24/7</span></a>
 								</div>
 								<ul class="hero__grid">
@@ -569,6 +593,25 @@
 					</div>
 				</section>
 			</main>
+		</div>
+		<div class="modal">
+			<div class="modal__window">
+				<button class="modal__close-btn"><img src="./images/icons/close_thick.svg" alt="" /></button>
+				<div class="modal__window-img"><img src="./images/woman-working-call-center.png" alt="" /></div>
+				<div class="modal__window-inner">
+					<div class="modal__window-title">Бесплатная юридическая консультация по телефону</div>
+					<div class="modal__window-specialists">
+						<div class="modal__window-pfp"><img src="./images/banner/banner-avatar-imgs.png" alt="" /></div>
+						<div class="modal__window-online">64 юриста сейчас онлайн</div>
+					</div>
+					<form class="modal__form">
+						<div class="modal__form-tel"><span>Номер телефона</span><input type="tel" placeholder="+7 999 999-99-99" /></div>
+						<div class="modal__form-name"><span>Ваше имя</span><input type="text" placeholder="Александр" /></div>
+						<button class="modal__form-btn" type="submit">Отправить</button>
+					</form>
+					<div class="modal__window-term">Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
