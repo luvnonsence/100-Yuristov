@@ -29,3 +29,38 @@ $(function () {
 		}
 	});
 });
+
+const slider1 = new Swiper('.specialties__grid', {
+	slidesPerView: 1,
+	autoHeight: true,
+	breakpoints: {
+		// Окно >= 768
+		768: {
+			enabled: false,
+			slidesPerView: 2,
+			spaceBetween: 20,
+			autoHeight: false,
+		},
+	},
+});
+
+const slider2 = new Swiper('.comments__grid', {
+	speed: 300,
+	spaceBetween: 20,
+	slidesPerView: 1,
+	loop: true,
+	navigation: {
+		nextEl: '.comments__right-arrow',
+		prevEl: '.comments__left-arrow',
+	},
+	breakpoints: {
+		// Окно >= 768
+		970: {
+			slidesPerView: 3,
+		},
+		// Окно >= 740
+		740: {
+			slidesPerView: 2,
+		}
+	},
+});
